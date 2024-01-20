@@ -1,5 +1,5 @@
 {
-  "name": "mamizujp",
+  "name": "blog.mamizu.jp",
   "version": "4.1.0",
   "scripts": {
     "dev": "astro dev",
@@ -58,5 +58,9 @@
     "*.{js,jsx,ts,tsx,md,mdx,json}": [
       "prettier --plugin-search-dir=. --write"
     ]
+  },
+  "volta": {
+    "node": "20.11.0",
+    "npm": "10.3.0"
   }
 }
