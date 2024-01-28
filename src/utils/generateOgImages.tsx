@@ -7,13 +7,13 @@ import siteOgImage from "./og-templates/site";
 const fetchFonts = async () => {
   // Regular Font
   const fontFileRegular = await fetch(
-    "https://www.1001fonts.com/download/font/ibm-plex-mono.regular.ttf"
+    "https://img.mamizu.jp/LINESeedJP_A_TTF_Rg.ttf"
   );
   const fontRegular: ArrayBuffer = await fontFileRegular.arrayBuffer();
 
   // Bold Font
   const fontFileBold = await fetch(
-    "https://www.1001fonts.com/download/font/ibm-plex-mono.bold.ttf"
+    "https://img.mamizu.jp/LINESeedJP_A_TTF_Bd.ttf"
   );
   const fontBold: ArrayBuffer = await fontFileBold.arrayBuffer();
 
@@ -28,13 +28,13 @@ const options: SatoriOptions = {
   embedFont: true,
   fonts: [
     {
-      name: "IBM Plex Mono",
+      name: "LINE Seed JP",
       data: fontRegular,
       weight: 400,
       style: "normal",
     },
     {
-      name: "IBM Plex Mono",
+      name: "LINE Seed JP",
       data: fontBold,
       weight: 600,
       style: "normal",
